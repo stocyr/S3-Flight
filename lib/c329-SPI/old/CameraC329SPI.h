@@ -23,9 +23,11 @@
 #ifndef CAMERAC329SPI_H_
 #define CAMERAC329SPI_H_
 
-//#include "WProgram.h"
-//#include "WConstants.h"
-#include "Arduino.h"		//hai
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WProgram.h"
+#endif
 //#include <inttypes.h>
 //#include <NewSoftSerial.h>
 #include "QuestInit.h"         //20220425

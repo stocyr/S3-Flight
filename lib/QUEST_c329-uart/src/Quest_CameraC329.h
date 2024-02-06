@@ -1,8 +1,11 @@
 #ifndef CAMERAC329_H_
 #define CAMERAC329_H_
 
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
 #include "WProgram.h"
-#include "WConstants.h"
+#endif
 #include <inttypes.h>
 
 // The byte size of UART commands
